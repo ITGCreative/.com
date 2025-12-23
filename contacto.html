@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Contáctanos | ITG Creative</title>
+<link rel="stylesheet" href="contacto.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+    <div class="loader-content">
+        <img src="Imagenes/Recurso 3.png" alt="Logo ITG">
+        <p>Cargando ITG Creative...</p>
+    </div>
+</div>
+
+<main class="contenedor">
+
+<header class="encabezado">CATÁLOGO</header>
+
+<!-- NAVEGACIÓN -->
+<nav class="navegacion nav-animada">
+    <img class="logo" src="Imagenes/Recurso 3.png" alt="Logo">
+
+    <div class="menu">
+
+        <div class="item dropdown">
+            <img src="Imagenes/Recurso 4.png" alt="">
+            <a href="index.html" class="btn-home">Home ▾</a>
+            <div class="dropdown-menu">
+                <a href="index.html#inicio">Inicio</a>
+                <a href="index.html#catalogo">¿Quiénes somos?</a>
+                <a href="index.html#ofrecemos">¿Qué ofrecemos?</a>
+            </div>
+        </div>
+
+        <div class="item dropdown">
+            <img src="Imagenes/Recurso 5.png" alt="">
+            <a href="catalogo.html">Catálogo ▾</a>
+            <div class="dropdown-menu">
+				<a href="catalogo.html#inicio">Inicio</a>
+                <a href="catalogo.html#material">Material publicitario</a>
+                <a href="catalogo.html#papeleria">Papelería y editorial</a>
+                <a href="catalogo.html#merchandising">Merchandising y promocionales</a>
+                <a href="catalogo.html#empaques">Empaques y etiquetas</a>
+                <a href="catalogo.html#granformato">Gran formato</a>
+                <a href="catalogo.html#pedidoespecial">Pedido especial</a>
+            </div>
+        </div>
+
+<div class="item dropdown">
+    <img src="Imagenes/Recurso 5.png" alt="">
+    <a href="contacto.html">Contáctanos ▾</a>
+    <div class="dropdown-menu">
+        <a href="contacto.html#inicio-contacto">Inicio</a>
+        <a href="contacto.html#info-contacto">Contáctanos</a>
+    </div>
+</div>
+
+
+        </div>
+    </nav>
+
+    <!-- ===================== -->
+    <!-- SECCIÓN INTRO -->
+<!-- SECCIÓN INTRO -->
+<section id="inicio-contacto" class="contacto-intro">
+    <h2>CONTÁCTANOS</h2>
+    <p>Escríbenos, llámanos o contáctanos por nuestras redes. Estamos aquí para ayudarte y hacer crecer tu proyecto.</p>
+</section>
+
+<!-- INFORMACIÓN DE CONTACTO -->
+<section id="info-contacto" class="contacto-info">
+    <h2>Información de contacto</h2>
+    <div class="info-grid">
+        <div class="info-item">
+            <p>📱 WhatsApp: +51 900 000 000</p>
+        </div>
+        <div class="info-item">
+            <p>✉️ Correo: info@itgcreative.com</p>
+        </div>
+        <div class="info-item">
+            <p>📍 Dirección: Lima, Perú</p>
+        </div>
+        <div class="info-item redes">
+            <p>Síguenos en redes sociales:</p>
+            <p>Instagram | Facebook | LinkedIn</p>
+        </div>
+    </div>
+</section>
+
+    <!-- ===================== -->
+    <!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-contenido">
+
+        <!-- MARCA -->
+        <div class="footer-col">
+            <img src="Imagenes/Recurso 7.png" alt="ITG Creative" class="footer-logo">
+            <p class="footer-texto">
+                Soluciones gráficas personalizadas para
+                empresas, marcas y emprendedores.
+            </p>
+        </div>
+
+        <!-- ENLACES -->
+        <div class="footer-col">
+            <h4>Secciones</h4>
+            <ul>
+                <li><a href="#inicio-contacto">Inicio</a></li>
+                <li><a href="#info-contacto">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <!-- CONTACTO -->
+        <div class="footer-col">
+            <h4>Contáctanos</h4>
+            <ul>
+                <li>📱 WhatsApp: +51 900 000 000</li>
+                <li>✉️ info@itgcreative.com</li>
+                <li>📍 Lima, Perú</li>
+                <li>
+                    Síguenos en redes: 
+                    <a href="#">Instagram</a> | 
+                    <a href="#">Facebook</a> | 
+                    <a href="#">LinkedIn</a>
+                </li>
+                <li><a href="index.html">Volver al inicio</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 ITG Creative — Todos los derechos reservados</p>
+    </div>
+</footer>
+
+
+</main>
+
+<!-- CURSOR -->
+<div class="cursor-outer"></div>
+<div class="cursor-inner"></div>
+
+<script>
+const o=document.querySelector(".cursor-outer"),i=document.querySelector(".cursor-inner");
+let x=0,y=0,ox=0,oy=0,ix=0,iy=0;
+document.addEventListener("mousemove",e=>{x=e.clientX;y=e.clientY});
+function a(){ox+=(x-ox)*.12;oy+=(y-oy)*.12;ix+=(x-ix)*.25;iy+=(y-iy)*.25;
+o.style.left=ox+"px";o.style.top=oy+"px";i.style.left=ix+"px";i.style.top=iy+"px";
+requestAnimationFrame(a)}a();
+</script>
+
+<script>
+window.addEventListener("load",()=>{
+setTimeout(()=>{
+document.getElementById("loader").classList.add("hidden");
+document.querySelector(".nav-animada").classList.add("visible")},1200);
+});
+</script>
+
+</body>
+</html>
+
+
